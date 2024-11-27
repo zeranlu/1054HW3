@@ -1,0 +1,164 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin: 0;
+    background-image: url(../images/woodbackground.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    top: 100%;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    background-image: url(../images/woodbackground.jpg);
+}
+
+footer span {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+
+}
+
+section {
+    width: 400px;
+    border: 4px solid #ffffff;
+    border-radius: 8px;
+    margin: 10px;
+    background-blend-mode: lighten;
+    background-color: #000000b2;
+}
+
+section h2 {
+    color: rgb(255, 255, 255);
+    padding: 5px 30px;
+}
+
+section:first-of-type {
+    border: 4px solid grey;
+}
+
+#donealcohol {
+    border: 4px solid grey;
+}
+
+#inprogressingredients {
+    border: 4px solid grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+.todococktails li:nth-child(odd) {
+    background-color: grey;    
+}
+
+.inprogressingredients li:nth-child(odd) {
+    background-color: grey;
+}
+
+.donealcohol li:nth-child(odd) {
+    background-color: grey;
+}
+
+input[type="checkbox"] {
+    align-items: center;
+}
+
+input[type="checkbox"]:checked+span::after {
+    display: flex;
+    float: right;
+    margin-right: 10%;
+    border-radius: 50%;
+    background-color: rgb(84, 201, 82);
+    border: 4px solid #8bdc8b;
+    font-size: 14px;
+    animation: fadeIn 1s;
+}
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+main section ul li::after {
+    content: "🍸";
+    display: flex;
+    float: left;
+    margin-left: 10%;
+}
+
+.todococktails [type="checkbox"]:checked + span::after {
+    content: "Good Choice!";
+}
+
+.inprogressingredients [type="checkbox"]:checked + span::after {
+    content: "Got It!";
+
+}
+
+#Whiskey [type="checkbox"]:checked + span::after {
+    content: "Whiskey Sour?";
+}
+
+#Vodka [type="checkbox"]:checked + span::after {
+    content: "Cosmopolitan?";
+
+}
+
+#Tequila [type="checkbox"]:checked + span::after {
+    content: "Margarita?";
+
+}
+
+#Gin [type="checkbox"]:checked + span::after {
+    content: "Tom Collins?";
+
+}
+
+#Rum [type="checkbox"]:checked + span::after {
+    content: "Daiquiri?";
+
+}
+
+#Triple [type="checkbox"]:checked + span::after {
+    content: "Margarita?";
+
+}
